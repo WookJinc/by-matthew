@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'AzeretMono-Light';
+    src: url('../font/subset-AzeretMono-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'AzeretMono-Regular';
+    src: url('../font/subset-AzeretMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'EBGaramond-Regular';
+    src: url('../font/subset-EBGaramond-Regular.woff2') format('woff2');
+}

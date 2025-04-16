@@ -1,0 +1,51 @@
+@import "./reset.css";
+@import "./common.css";
+
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+#header .logo-area .img-wrapper {
+    width: 100px;
+}
+
+#header .util-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#header .util-area span {
+    font-family: var(--ebgaramond-regular);
+    font-size: 24px;
+}
+
+#header .util-area .img-wrapper {
+    width: 32px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #header .logo-area .img-wrapper {
+        width: 80px;
+    }
+
+    #header .util-area span {
+        font-size: 16px;
+    }
+
+    #header .util-area .img-wrapper {
+        width: 24px;
+    }
+}

@@ -1,0 +1,1106 @@
+#wrap {
+    position: relative;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+}
+
+.fixed-nav {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+    color: #fff;
+    z-index: 10;
+}
+
+.fixed-nav .col-1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex: 5;
+}
+
+.fixed-nav .col-1 .list {
+    width: 192px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 32px;
+    padding: 10px 30px;
+    background: #141414;
+    position: relative;
+}
+
+.fixed-nav .col-1 .list .item {
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.fixed-nav .col-1 .guide-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+}
+
+.fixed-nav .col-2 {
+    flex: 5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fixed-nav .col-2 .bag {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 224px;
+    padding: 10px 30px;
+    border-radius: 32px;
+    background: #141414;
+    cursor: pointer;
+}
+
+.fixed-nav .col-2 .bag span {
+    font-size: 16px;
+}
+
+.hover-effect {
+    color: #999;
+    opacity: 0.5;
+    transition: all .3s;
+}
+
+/* sc-shirt */
+.sc-shirt {
+    position: relative;
+    width: 100%;
+}
+
+/* sc-shirt > meet-group */
+.sc-shirt .meet-group {
+    position: relative;
+}
+
+.sc-shirt .meet-group .bg {
+    width: 100%;
+    height: 150vh;
+}
+
+.sc-shirt .meet-group .logo-area {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 112px;
+    color: #fff;
+}
+
+/* sc-shirt > guide-group */
+.sc-shirt .guide-group {
+    position: relative;
+    margin-top: -3%;
+    width: 100%;
+    height: 1000vh;
+    background: #000;
+    padding-top: 10%;
+    color: #fff;
+}
+
+.sc-shirt .guide-group .sticky-before {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    margin-top: -100vh;
+    z-index: 2;
+}
+
+.sc-shirt .guide-group .sticky-before .text-area {
+    width: 100%;
+    font-family: var(--ebgaramond-regular);
+}
+
+.sc-shirt .guide-group .sticky-before .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.sc-shirt .guide-group .sticky-before .title {
+    font-size: 208px;
+}
+
+/* guide-group > guide-common */
+.sc-shirt .guide-group .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sc-shirt .guide+.guide {
+    position: absolute;
+    opacity: 0;
+}
+
+.sc-shirt .guide .bg {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.sc-shirt .guide .bg img {
+    object-fit: contain;
+}
+
+.sc-shirt .guide .img-wrapper {
+    border: 1px solid #d9d9db;
+}
+
+.sc-shirt .guide .detail {
+    position: absolute;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sc-shirt .guide .detail .text {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9db;
+}
+
+.sc-shirt .guide .line {
+    position: absolute;
+    height: 1px;
+    background: #d9d9db;
+}
+
+.sc-shirt .guide .detail,
+.sc-shirt .guide .line {
+    opacity: 0;
+}
+
+/* guide-group > guide-1 */
+.sc-shirt .guide-1 {
+    position: relative;
+}
+
+.sc-shirt .guide-1 .bg {
+    transform-origin: top center;
+    will-change: transform;
+}
+
+.sc-shirt .guide-1 .detail-1 {
+    top: 25%;
+    left: 15%;
+    width: 15%;
+}
+
+.sc-shirt .guide-1 .detail-2 {
+    top: 42%;
+    right: 17%;
+    text-align: right;
+}
+
+.sc-shirt .guide-1 .detail-2 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-1 .detail-2 .text {
+    width: 32vw;
+}
+
+.sc-shirt .guide-1 .detail-3 {
+    top: 42%;
+    right: 12%;
+}
+
+.sc-shirt .guide-1 .detail-3 span {
+    font-size: 12px;
+}
+
+.sc-shirt .guide-1 .line {
+    top: 33%;
+    left: 30%;
+    width: 18vw;
+}
+
+/* guide-group > guide-2 */
+.sc-shirt .guide-2 .detail-1 {
+    bottom: 35%;
+    right: 13.5%;
+    width: 15%;
+    text-align: right;
+}
+
+.sc-shirt .guide-2 .detail-2 {
+    bottom: 19%;
+    left: 17%;
+}
+
+.sc-shirt .guide-2 .detail-2 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-2 .detail-2 .text {
+    width: 32vw;
+}
+
+.sc-shirt .guide-2 .detail-3 {
+    bottom: 23.5%;
+    left: 12%;
+}
+
+.sc-shirt .guide-2 .detail-3 span {
+    font-size: 12px;
+}
+
+.sc-shirt .guide-2 .line {
+    bottom: 43.5%;
+    right: 28.5%;
+    width: 18vw;
+}
+
+/* guide-group > guide-3 */
+.sc-shirt .guide-3 .detail-1 {
+    bottom: 15%;
+    left: 15%;
+    width: 15%;
+    text-align: left;
+}
+
+.sc-shirt .guide-3 .detail-2 {
+    top: 33.3%;
+    right: 17%;
+    text-align: right;
+}
+
+.sc-shirt .guide-3 .detail-2 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-3 .detail-2 .text {
+    width: 32vw;
+}
+
+.sc-shirt .guide-3 .detail-3 {
+    top: 33.5%;
+    right: 12%;
+}
+
+.sc-shirt .guide-3 .detail-3 span {
+    font-size: 12px;
+}
+
+.sc-shirt .guide-3 .line {
+    bottom: 24%;
+    left: 30%;
+    width: 11vw;
+}
+
+/* guide-group > guide-4 */
+.sc-shirt .guide-4 .detail-1 {
+    bottom: 40%;
+    right: 10%;
+    width: 15%;
+    text-align: right;
+}
+
+.sc-shirt .guide-4 .detail-2 {
+    bottom: 26.8%;
+    left: 17.6%;
+    text-align: left;
+}
+
+.sc-shirt .guide-4 .detail-2 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-4 .detail-2 .text {
+    width: 23vw;
+}
+
+.sc-shirt .guide-4 .detail-3 {
+    bottom: 33%;
+    left: 12%;
+}
+
+.sc-shirt .guide-4 .detail-3 span {
+    font-size: 12px;
+}
+
+.sc-shirt .guide-4 .line {
+    top: 52%;
+    right: 25%;
+    width: 24vw;
+}
+
+/* guide-group > guide-5 */
+.sc-shirt .guide-5 .detail-1 {
+    top: 45%;
+    left: 20%;
+    width: 30%;
+    text-align: left;
+}
+
+.sc-shirt .guide-5 .detail-1 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-5 .detail-1 .text {
+    width: 26vw;
+}
+
+.sc-shirt .guide-5 .detail-2 {
+    top: 38%;
+    right: 20%;
+    text-align: right;
+}
+
+.sc-shirt .guide-5 .detail-2 p+p {
+    margin-top: 10px;
+}
+
+.sc-shirt .guide-5 .detail-2 .text {
+    width: 24vw;
+}
+
+.sc-shirt .guide-5 .detail-3 {
+    bottom: 53.5%;
+    left: 15%;
+}
+
+.sc-shirt .guide-5 .detail-3 span {
+    font-size: 12px;
+}
+
+/* guide-group > guide-6 */
+.sc-shirt .guide-6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sc-shirt .guide-6 .detail-1 {
+    bottom: 36%;
+    left: 12%;
+    width: 30%;
+    text-align: left;
+}
+
+.sc-shirt .guide-6 .detail-1 .text {
+    width: 28vw;
+}
+
+.sc-shirt .guide-6 .detail-2 {
+    bottom: 13%;
+    right: 20%;
+    text-align: right;
+}
+
+.sc-shirt .guide-6 .detail-2 .text {
+    width: 28vw;
+}
+
+.sc-shirt .guide-6 .detail-3 {
+    bottom: 50%;
+    left: 12%;
+}
+
+.sc-shirt .guide-6 .detail-3 p {
+    font-size: 12px;
+}
+
+/* guide-group > guide-7 */
+.sc-shirt .guide-7 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sc-shirt .guide-7 .bg img {
+    object-fit: cover;
+}
+
+.sc-shirt .guide-7 .detail {
+    top: 44%;
+    left: 13%;
+    width: 30%;
+    text-align: left;
+}
+
+.sc-shirt .guide-7 .detail .text {
+    width: 35vw;
+}
+
+/* sc-size */
+.sc-size {
+    position: relative;
+    height: 200vh;
+    background: #000;
+}
+
+.sc-size.bg-effect {
+    color: #000;
+    background: #ebe9e5;
+}
+
+.sc-size .sticky {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sc-size .bg-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sc-size .bg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sc-size .text-group {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: var(--ebgaramond-regular);
+}
+
+.sc-size .text-group.text-effect {
+    color: #000;
+}
+
+.sc-size .text-group .title {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.sc-size .text-group .desc {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.sc-size .text-group .price {
+    margin: 1.5% 0;
+    font-size: 24px;
+}
+
+.sc-size .text-group p {
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.sc-size .text-group .highlight {
+    color: #999;
+}
+
+.sc-size .text-group .size-title {
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+    font-size: 18px;
+}
+
+.sc-size .text-group .list {
+    font-family: var(--azeretMono-Light);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 1.5%;
+    font-size: 24px;
+}
+
+.sc-size .text-group .item {
+    cursor: pointer;
+}
+
+.sc-size .text-group .guide-link {
+    color: #999;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #999;
+}
+
+.sc-size .text-group .btn-add {
+    margin-top: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border-radius: 32px;
+    background: #141414;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    border: 1px solid white;
+}
+
+.sc-size .text-group .btn-add.btn-effect {
+    color: #999;
+    background: #ebe9e5;
+}
+
+/* sc-detail */
+.sc-detail {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.sc-detail .bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-detail .bg img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.sc-detail .zoom-lens {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #999;
+    overflow: hidden;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    display: none;
+}
+
+/* footer */
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#footer .bg {
+    width: 100%;
+    height: 100%;
+}
+
+#footer .bg img {
+    object-fit: contain;
+}
+
+#footer .img-wrapper {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1;
+    width: 160px;
+}
+
+#footer .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer .list {
+    font-family: var(--ebgaramond-regular);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 16px;
+    padding: 20px 30px;
+    border-radius: 32px;
+    background: #ebe9e5;
+}
+
+#footer .item a {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* sc-shirt */
+    .sc-shirt .guide-1 .detail-2 {
+        top: 41%;
+        right: 11%;
+    }
+
+    .sc-shirt .guide-1 .detail-3 {
+        right: 5%;
+    }
+
+    .sc-shirt .guide-1 .line1 {
+        top: 31%;
+    }
+
+    .sc-shirt .guide-1 .line2 {
+        top: 46.5%;
+        right: 11%;
+        width: 38vw;
+    }
+
+    .sc-shirt .guide-2 .line1 {
+        bottom: 24.5%;
+    }
+
+    .sc-shirt .guide-3 .detail-1 {
+        left: 8%;
+    }
+
+    .sc-shirt .guide-3 .detail-2 {
+        top: 34%;
+        right: 11%;
+    }
+
+    .sc-shirt .guide-3 .detail-3 {
+        top: 34%;
+        right: 5%;
+    }
+
+    .sc-shirt .guide-3 .line1 {
+        bottom: 24%;
+        left: 23%;
+        width: 15vw;
+    }
+
+    .sc-shirt .guide-3 .line2 {
+        top: 42%;
+        right: 11%;
+        width: 38vw;
+    }
+
+    .sc-shirt .guide-5 .detail-1 {
+        left: 16.1%;
+    }
+
+    .sc-shirt .guide-5 .detail-2 {
+        right: 12%;
+        top: 39%;
+    }
+
+    .sc-shirt .guide-5 .detail-3 {
+        left: 8%;
+    }
+
+    .sc-shirt .guide-5 .line1 {
+        width: 30vw;
+        left: 16%;
+    }
+
+    .sc-shirt .guide-5 .line2 {
+        width: 30vw;
+        right: 12%;
+    }
+
+    .sc-shirt .guide-6 .detail-1 {
+        left: 8%;
+    }
+
+    .sc-shirt .guide-6 .detail-2 {
+        right: 15%;
+    }
+
+    .sc-shirt .guide-6 .detail-3 {
+        left: 8%;
+    }
+
+    .sc-shirt .guide-6 .line1 {
+        width: 32vw;
+        left: 8%;
+    }
+
+    .sc-shirt .guide-6 .line2 {
+        width: 35vw;
+        right: 15%;
+    }
+
+    .sc-shirt .guide-7 .bg img {
+        object-fit: cover;
+    }
+
+    .sc-shirt .guide-7 .detail {
+        left: 5%;
+    }
+
+    .sc-shirt .guide-7 .line {
+        left: 0%;
+        width: 45vw;
+    }
+
+    /* sc-size */
+    .sc-size .text-group p {
+        line-height: 1.5;
+    }
+
+    .sc-size .text-group .size-title {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .sc-size .text-group .btn-add {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    /* fixed-nav */
+    .fixed-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        mix-blend-mode: normal;
+    }
+
+    .fixed-nav .col-1 .list {
+        display: none;
+    }
+
+    .fixed-nav .col-2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-nav .col-2 .bag {
+        width: 35%;
+    }
+
+    /* sc-shirt */
+    .sc-shirt .meet-group .bg {
+        height: 100%;
+    }
+
+    .sc-shirt .meet-group .logo-area {
+        display: none;
+    }
+
+    .sc-shirt .guide-group .sticky-before {
+        position: static;
+    }
+
+    .sc-shirt .guide-group .text-area {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sc-shirt .guide-group .text-area span {
+        display: none;
+    }
+
+    .sc-shirt .guide-group .text-area .title {
+        font-size: 160px;
+    }
+
+    .sc-shirt .guide-group {
+        height: 100%;
+    }
+
+    .sc-shirt .guide-group .sticky {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sc-shirt .guide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+    }
+
+    .sc-shirt .guide+.guide {
+        position: relative;
+        opacity: 1;
+        padding-top: 10%;
+    }
+
+    .sc-shirt .guide .bg {
+        height: auto;
+    }
+
+    .sc-shirt .guide .detail {
+        opacity: 1;
+    }
+
+    .sc-shirt .guide .detail .text {
+        width: 100%;
+        border: none;
+    }
+
+    .sc-shirt .guide .detail-2 {
+        position: static;
+        text-align: center;
+    }
+
+    .sc-shirt .guide .detail-2 p {
+        padding-bottom: 5%;
+    }
+
+    .sc-shirt .guide .detail-3 {
+        display: none;
+    }
+
+    .sc-shirt .guide .line {
+        display: none;
+    }
+
+    .sc-shirt .guide-1 .detail-1 {
+        top: 40%;
+        left: 20%;
+        width: 25%;
+    }
+
+    .sc-shirt .guide-2 .detail-1 {
+        bottom: 40%;
+        width: 25%;
+    }
+
+    .sc-shirt .guide-3 .detail-1 {
+        bottom: 30%;
+        width: 25%;
+    }
+
+    .sc-shirt .guide-4 .detail-1 {
+        top: 35%;
+        width: 25%;
+    }
+
+    .sc-shirt .guide-5 .detail-1 {
+        position: static;
+        text-align: center;
+    }
+
+    .sc-shirt .guide-6 {
+        display: none;
+    }
+
+    .sc-shirt .guide-7 .bg img {
+        object-fit: cover;
+    }
+
+    .sc-shirt .guide-7 .detail {
+        width: 50%;
+        top: 40%;
+        left: 5%;
+    }
+
+    /* sc-size */
+    .sc-size .text-group {
+        gap: 16px;
+    }
+
+    .sc-size .text-group p {
+        line-height: 1.5;
+    }
+
+    .sc-size .text-group .size-title {
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+
+    .sc-size .text-group .btn-add {
+        margin-top: 3%;
+    }
+
+    /* sc-detail */
+    .sc-detail {
+        display: none;
+    }
+
+    /* footer */
+    #footer {
+        padding-top: 0;
+    }
+
+    #footer .bg img {
+        object-fit: cover;
+    }
+
+    #footer .list {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* fixed-nav */
+    .fixed-nav .col-2 .bag {
+        width: 90%;
+    }
+
+    /* sc-shirt */
+    .sc-shirt .meet-group .bg {
+        height: 100vh;
+    }
+
+    .sc-shirt .guide-group .sticky-before .title {
+        font-size: 48px;
+    }
+
+    .sc-shirt .guide-1 .detail-1 {
+        top: 30%;
+        left: 5%;
+        width: 40%;
+    }
+
+    .sc-shirt .guide-2 .detail-1 {
+        bottom: 50%;
+        width: 40%;
+    }
+
+    .sc-shirt .guide-3 .detail-1 {
+        bottom: 40%;
+        width: 40%;
+    }
+
+    .sc-shirt .guide-4 .detail-1 {
+        top: 25%;
+        width: 40%;
+    }
+
+    .sc-shirt .guide-5 .detail-1 {
+        position: static;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .sc-shirt .guide-6 {
+        display: none;
+    }
+
+    .sc-shirt .guide-7 {
+        margin-top: 10%;
+    }
+
+    .sc-shirt .guide-7 .bg img {
+        object-fit: cover;
+    }
+
+    .sc-shirt .guide-7 .detail {
+        width: 100%;
+        top: 45%;
+        left: 5%;
+    }
+
+    /* sc-size */
+    .sc-size {
+        height: 100vh;
+    }
+
+    .sc-size .sticky {
+        position: relative;
+        height: 100%;
+    }
+
+    .sc-size .bg-group {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .sc-size .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sc-size .bg img {
+        width: 75%;
+        height: 100%;
+    }
+
+    .sc-size .bg:first-of-type {
+        bottom: 0%;
+        left: -15%;
+        height: auto;
+    }
+
+    .sc-size .bg:last-of-type {
+        bottom: 0%;
+        right: -45%;
+        width: auto;
+        height: auto;
+    }
+
+    .sc-size .text-group .title {
+        font-size: 32px;
+    }
+
+    .sc-size .text-group .desc,
+    .sc-size .text-group .price,
+    .sc-size .text-group .size-title {
+        font-size: 24px;
+    }
+
+    .sc-size .text-group .guide-link {
+        font-size: 12px;
+    }
+
+    .sc-size .text-group .btn-add {
+        z-index: 1;
+    }
+
+    /* footer */
+    #footer {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #footer .img-wrapper {
+        width: 80px;
+    }
+
+    #footer .list {
+        width: 100%;
+        gap: 8px;
+        padding: 10px 15px;
+    }
+
+    #footer .item a {
+        font-size: 12px;
+    }
+}
