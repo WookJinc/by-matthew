@@ -4,7 +4,7 @@ $(window).on('load', function () {
     lenis.on('scroll', ScrollTrigger.update);
 
     gsap.ticker.add((time) => {
-        lenis.raf(time * 300);
+        lenis.raf(time * 600);
     });
 
     gsap.ticker.lagSmoothing(0);
@@ -480,7 +480,7 @@ $(window).on('load', function () {
         })
 
         detailMotion
-            .to(".sc-detail .bg img", {
+            .to(".sc-detail .content-wrapper", {
                 scale: 0.75,
                 ease: "none"
             })
@@ -508,31 +508,28 @@ $(window).on('load', function () {
 
     const detailImage = document.querySelector(".sc-detail .bg img");
     const zoomLens = document.querySelector(".sc-detail .zoom-lens");
+    const contentWrapper = document.querySelector(".sc-detail .content-wrapper");
     
     detailImage.addEventListener("mousemove", (e) => {
         zoomLens.style.display = 'block';
     
         const rect = detailImage.getBoundingClientRect();
+        const wrapperRect = contentWrapper.getBoundingClientRect();
         const scale = 2;
     
         const offsetX = e.clientX - rect.left;
         const offsetY = e.clientY - rect.top;
     
-        const lensHalfW = zoomLens.offsetWidth / 2;
-        const lensHalfH = zoomLens.offsetHeight / 2;
+        // 줌렌즈를 마우스 중앙에 배치
+        const lensX = e.clientX - wrapperRect.left;
+        const lensY = e.clientY - wrapperRect.top;
     
-        let x = offsetX - lensHalfW;
-        let y = offsetY - lensHalfH;
-    
-        x = Math.max(0, Math.min(rect.width - zoomLens.offsetWidth, x));
-        y = Math.max(0, Math.min(rect.height - zoomLens.offsetHeight, y));
-    
-        zoomLens.style.left = `${x + rect.left}px`;
-        zoomLens.style.top = `${y + rect.top}px`;
+        zoomLens.style.left = `${lensX}px`;
+        zoomLens.style.top = `${lensY}px`;
     
         zoomLens.style.backgroundImage = `url(${detailImage.src})`;
         zoomLens.style.backgroundSize = `${rect.width * scale}px ${rect.height * scale}px`;
-        zoomLens.style.backgroundPosition = `-${offsetX * scale - lensHalfW}px -${offsetY * scale - lensHalfH}px`;
+        zoomLens.style.backgroundPosition = `-${offsetX * scale - zoomLens.offsetWidth / 2}px -${offsetY * scale - zoomLens.offsetHeight / 2}px`;
     });
     
     detailImage.addEventListener("mouseleave", () => {

@@ -565,10 +565,17 @@
 
 /* sc-detail */
 .sc-detail {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sc-detail .content-wrapper {
+    position: relative;
+    width: 50%;
+    height: 50%;
 }
 
 .sc-detail .bg {
@@ -580,21 +587,22 @@
 }
 
 .sc-detail .bg img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
 .sc-detail .zoom-lens {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border: 2px solid #999;
     overflow: hidden;
     pointer-events: none;
     background-repeat: no-repeat;
     background-size: 400px 400px;
     display: none;
+    transform: translate(-50%, -50%);
 }
 
 /* footer */
