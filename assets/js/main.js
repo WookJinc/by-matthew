@@ -520,7 +520,6 @@ $(window).on('load', function () {
         const offsetX = e.clientX - rect.left;
         const offsetY = e.clientY - rect.top;
     
-        // 줌렌즈를 마우스 중앙에 배치
         const lensX = e.clientX - wrapperRect.left;
         const lensY = e.clientY - wrapperRect.top;
     
