@@ -12,8 +12,14 @@
     bottom: 15px;
     width: 100%;
     padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     mix-blend-mode: difference;
     color: #fff;
@@ -21,16 +27,28 @@
 }
 
 .fixed-nav .col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 32px;
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
     flex: 5;
 }
 
 .fixed-nav .col-1 .list {
     width: 192px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border-radius: 32px;
     padding: 10px 30px;
@@ -51,15 +69,27 @@
 }
 
 .fixed-nav .col-2 {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
     flex: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .fixed-nav .col-2 .bag {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 224px;
     padding: 10px 30px;
@@ -75,6 +105,7 @@
 .hover-effect {
     color: #999;
     opacity: 0.5;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -98,6 +129,7 @@
     position: absolute;
     top: 10%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 112px;
     color: #fff;
@@ -128,8 +160,14 @@
 }
 
 .sc-shirt .guide-group .sticky-before .desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 32px;
 }
@@ -144,8 +182,14 @@
     top: 0;
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
 }
@@ -162,6 +206,7 @@
 }
 
 .sc-shirt .guide .bg img {
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -197,6 +242,7 @@
 }
 
 .sc-shirt .guide-1 .bg {
+    -webkit-transform-origin: top center;
     transform-origin: top center;
     will-change: transform;
 }
@@ -430,6 +476,7 @@
 }
 
 .sc-shirt .guide-7 .bg img {
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -465,7 +512,11 @@
 }
 
 .sc-size .bg-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -478,9 +529,18 @@
     position: absolute;
     top: 0;
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -525,7 +585,11 @@
 
 .sc-size .text-group .list {
     font-family: var(--azeretMono-Light);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 32px;
     margin-bottom: 1.5%;
@@ -546,8 +610,14 @@
 
 .sc-size .text-group .btn-add {
     margin-top: 1.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 15px 30px;
     border-radius: 32px;
@@ -566,8 +636,14 @@
 /* sc-detail */
 .sc-detail {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100vh;
 }
@@ -581,14 +657,21 @@
 .sc-detail .bg {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .sc-detail .bg img {
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -602,13 +685,18 @@
     background-repeat: no-repeat;
     background-size: 400px 400px;
     display: none;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 /* footer */
 #footer {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
@@ -621,6 +709,7 @@
 }
 
 #footer .bg img {
+    -o-object-fit: contain;
     object-fit: contain;
 }
 
@@ -635,6 +724,7 @@
 #footer .img-wrapper img {
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -643,8 +733,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 50%;
     gap: 16px;
@@ -755,6 +850,7 @@
     }
 
     .sc-shirt .guide-7 .bg img {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -786,8 +882,15 @@
 
     /* fixed-nav */
     .fixed-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 16px;
         width: 100%;
@@ -800,8 +903,14 @@
 
     .fixed-nav .col-2 {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -824,8 +933,14 @@
 
     .sc-shirt .guide-group .text-area {
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -843,7 +958,12 @@
 
     .sc-shirt .guide-group .sticky {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: auto;
     }
@@ -852,8 +972,15 @@
         position: relative;
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 3vw;
     }
@@ -925,6 +1052,7 @@
     }
 
     .sc-shirt .guide-7 .bg img {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -963,6 +1091,7 @@
     }
 
     #footer .bg img {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -1024,6 +1153,7 @@
     }
 
     .sc-shirt .guide-7 .bg img {
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
