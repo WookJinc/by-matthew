@@ -11,11 +11,6 @@ $(window).on('load', function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    /* common  */
-    let wordSplit = new SplitType("[data-split='true']", {
-        types: "words",
-    })
-
     // hover 
     $(".item").each(function () {
         $(this).hover(
